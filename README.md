@@ -13,20 +13,20 @@ A feature-rich Monopoly implementation built with Python and Tkinter, featuring 
 - **Railroad Heists**: Landing on an opponent's railroad triggers a minigame battle. The winner steals money from the loser.
 - **Community Chest Challenge**: Landing on Community Chest starts a global battle. The winner of the minigame claims the card's effect.
 
-## 🧠 DSA Mini-Games
+## 🧠 Mini-Games
 
-The game integrates 10 distinct minigames, each demonstrating a different DSA technique:
+The game integrates 10 distinct minigames:
 
-1.  **Word Builder**: Uses a **Trie (Prefix Tree)** for O(L) word validation.
-2.  **Snake Race**: Uses a **Singly Linked List** for body segment management.
-3.  **Typing Race**: Uses the **KMP (Knuth-Morris-Pratt)** algorithm for pattern matching.
-4.  **Pacman Survival**: Uses **BFS (Breadth-First Search)** for ghost pathfinding.
-5.  **Maze Escape**: Uses **DFS (Depth-First Search)** for randomized maze generation.
-6.  **Quick Math**: Uses **RPN (Reverse Polish Notation)** and **Stacks** for expression evaluation.
-7.  **Ping Pong**: Uses **AABB Collision Detection**.
-8.  **Coin Catcher**: Uses **AABB Collision Detection** and object pooling.
-9.  **Memory Card**: Uses **Fisher-Yates Shuffle** and **Hash Maps**.
-10. **Chicken Cross**: Uses **Circular Queues (Deque)** for object pooling of obstacles.
+1.  **Word Builder**
+2.  **Snake Race**
+3.  **Typing Race**
+4.  **Pacman Survival**
+5.  **Maze Escape**
+6.  **Quick Math**
+7.  **Ping Pong**
+8.  **Coin Catcher**
+9.  **Memory Card**
+10. **Chicken Cross**
 
 ## 🛠️ Technology Stack
 - **Language**: Python 3.x
