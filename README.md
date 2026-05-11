@@ -52,7 +52,6 @@ python main.py
 - `monopoly_ui.py`: The "Face" - handles the board rendering and animations.
 - `monopoly_dialogs.py`: Specialized UI components for Jail and Cards.
 - `minigame_ui.py`: Implementation of all 10 DSA mini-games.
-- `report.md`: Detailed academic report of the project.
 
 ## 📜 License
 This project was developed for the IT003.Q21.TTNT course.
