@@ -13,13 +13,13 @@ Python/Tkinter Monopoly-style game with a party-mode minigame system, Monopoly G
   - `2. Buy / Upgrade`: buy unowned property or upgrade current player's property.
   - `3. Sell`: sell current player's house/hotel or sell owned property back to bank.
 - House/hotel upgrades appear as 2.5D buildings on the tile color lane.
-- Owners are shown with player-colored houses instead of recoloring the whole tile.
+- Owners are shown with player-colored houses.
 - Monopoly GO-style isometric board with generated tile images, color lanes, place names, and prices baked into each tile image.
 
 ### Party Mode
 
 - Railroad tiles can trigger a random minigame battle against the other player.
-- Community Chest tiles trigger a minigame challenge; winner receives the card effect.
+- Minigame tiles trigger a minigame challenge; winner receives the card effect.
 - Active random minigames:
   1. Typing Race
   2. Ping Pong
@@ -27,8 +27,6 @@ Python/Tkinter Monopoly-style game with a party-mode minigame system, Monopoly G
   4. Coin Catcher
   5. Pacman
   6. Snake Race
-
-Removed from active/debug rotation: Maze Escape, Chicken Cross, and Word Builder.
 
 ## DSA Concepts
 
