@@ -18,7 +18,6 @@ Python/Tkinter Monopoly-style game with a party-mode minigame system, Monopoly G
 
 ### Party Mode
 
-- Railroad tiles can trigger a random minigame battle against the other player.
 - Minigame tiles trigger a minigame challenge; winner receives the card effect.
 - Active random minigames:
   1. Typing Race
