@@ -1,57 +1,81 @@
 # Monopoly Party Mode - DSA Project
 
-A feature-rich Monopoly implementation built with Python and Tkinter, featuring 10 unique mini-games based on core Data Structures and Algorithms (DSA) concepts.
+Python/Tkinter Monopoly-style game with a party-mode minigame system, Monopoly GO-inspired board visuals, Vietnamese-themed tile names, and DSA-based minigames.
 
-## 🎲 Features
+## Features
 
-### Core Monopoly Gameplay
-- **Classic Rule Parity**: Includes movement, property purchasing, rent calculation (doubled for monopolies), housing development (even building rule), and jail mechanics.
-- **Dynamic Turn Management**: Full state machine handling dice rolls, doubles, card draws, and bankruptcy.
-- **Visual Interface**: Interactive board with token animations, dice physics, and floating status text.
+### Monopoly Gameplay
 
-### Party Mode: Railroad & Community Chest Challenges
-- **Railroad Heists**: Landing on an opponent's railroad triggers a minigame battle. The winner steals money from the loser.
-- **Community Chest Challenge**: Landing on Community Chest starts a global battle. The winner of the minigame claims the card's effect.
+- Classic Monopoly movement, dice rolls, doubles, jail, Chance cards, Community Chest cards, rent, bankruptcy, houses, and hotels.
+- 40-tile board with custom Vietnamese place names.
+- Three-choice landing menu on purchasable tiles:
+  - `1. Continue`: continue normal tile effect, such as rent, minigame, or end turn.
+  - `2. Buy / Upgrade`: buy unowned property or upgrade current player's property.
+  - `3. Sell`: sell current player's house/hotel or sell owned property back to bank.
+- House/hotel upgrades appear as 2.5D buildings on the tile color lane.
+- Owners are shown with player-colored houses instead of recoloring the whole tile.
+- Monopoly GO-style isometric board with generated tile images, color lanes, place names, and prices baked into each tile image.
 
-## 🧠 Mini-Games
+### Party Mode
 
-The game integrates 10 distinct minigames:
+- Railroad tiles can trigger a random minigame battle against the other player.
+- Community Chest tiles trigger a minigame challenge; winner receives the card effect.
+- Active random minigames:
+  1. Typing Race
+  2. Ping Pong
+  3. Quick Math
+  4. Coin Catcher
+  5. Pacman
+  6. Snake Race
 
-1.  **Word Builder**
-2.  **Snake Race**
-3.  **Typing Race**
-4.  **Pacman Survival**
-5.  **Maze Escape**
-6.  **Quick Math**
-7.  **Ping Pong**
-8.  **Coin Catcher**
-9.  **Memory Card**
-10. **Chicken Cross**
+Removed from active/debug rotation: Maze Escape, Chicken Cross, and Word Builder.
 
-## 🛠️ Technology Stack
-- **Language**: Python 3.x
-- **GUI Framework**: Tkinter (Standard Library)
-- **Graphics**: Tkinter Canvas API
+## DSA Concepts
 
-## 🚀 Getting Started
+- Typing Race: KMP string matching.
+- Ping Pong: AABB collision detection.
+- Quick Math: Reverse Polish Notation and stack evaluation.
+- Coin Catcher: AABB collision detection and list-based object tracking.
+- Pacman: BFS pathfinding on a grid.
+- Snake Race: linked-list style snake body management.
+- Monopoly engine: arrays/lists for board data, circular movement with modulo, dictionaries for groups/cards, and queue-like card deck traversal.
 
-### Prerequisites
-- Python 3.10 or higher installed on your system.
+## Run
 
-### Running the Game
-Simply run the `main.py` file to launch the main menu:
-
-```bash
+```powershell
 python main.py
 ```
 
-## 📁 Project Structure
+## Debug Minigames
 
-- `main.py`: Entry point and main menu.
-- `monopoly_logic.py`: The "Brain" - handles rules, player states, and board data.
-- `monopoly_ui.py`: The "Face" - handles the board rendering and animations.
-- `monopoly_dialogs.py`: Specialized UI components for Jail and Cards.
-- `minigame_ui.py`: Implementation of all 10 DSA mini-games.
+Use the standalone launcher to test minigames without starting Monopoly:
 
-## 📜 License
-This project was developed for the IT003.Q21.TTNT course.
+```powershell
+python debug_minigames.py
+```
+
+Launch one directly:
+
+```powershell
+python debug_minigames.py "Quick Math"
+python debug_minigames.py 3
+```
+
+## Project Structure
+
+- `main.py`: main menu and app entry point.
+- `monopoly_logic.py`: Monopoly rules, board data, rent, cards, jail, housing, and bankruptcy.
+- `monopoly_ui.py`: Tkinter UI, isometric board rendering, dice animation, landing menu, token flow, and minigame integration.
+- `monopoly_dialogs.py`: jail and card dialogs.
+- `minigame_ui.py`: minigame implementations.
+- `debug_minigames.py`: standalone minigame debug launcher.
+
+## Requirements
+
+- Python 3.10+
+- Pillow (`PIL`) for generated tile images.
+- Tkinter, included with standard Python on most installs.
+
+## Course
+
+Developed for IT003.Q21.TTNT.
